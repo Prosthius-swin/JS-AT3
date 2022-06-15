@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="./script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <button id="rollBtn" onclick="setRolls();">
+                        roll
+                    </button>
+                <input type="text" placeholder="Input number of dice to roll" id="userRollInput">
+                </div>
+                <div class="row">
+                    <div id="roll-result">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="column" >
+                    <button onclick="calculateAverage();">
+                        Average
+                    </button>
+                    <button onclick="calculateTotal();">
+                        Total
+                    </button>
+                </div>
+            </div>
+            <div class="row mx-1" id="average-output">
+                <div>
+                    Average:
+                </div>
+            </div>
+            <div class="row mx-1" id="total-output">
+                <div>
+                    Total:
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <button onclick="reset();">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
